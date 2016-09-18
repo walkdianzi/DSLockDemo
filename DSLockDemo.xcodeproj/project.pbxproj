@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		333F99331D7EC64E00306EAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F99321D7EC64E00306EAE /* main.m */; };
+		333F99361D7EC64E00306EAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F99351D7EC64E00306EAE /* AppDelegate.m */; };
+		333F99391D7EC64E00306EAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F99381D7EC64E00306EAE /* ViewController.m */; };
+		333F993C1D7EC64E00306EAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333F993A1D7EC64E00306EAE /* Main.storyboard */; };
+		333F993E1D7EC64E00306EAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333F993D1D7EC64E00306EAE /* Assets.xcassets */; };
+		333F99411D7EC64E00306EAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333F993F1D7EC64E00306EAE /* LaunchScreen.storyboard */; };
+		333F994C1D7EC64E00306EAE /* DSLockDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F994B1D7EC64E00306EAE /* DSLockDemoTests.m */; };
+		333F99571D7EC64E00306EAE /* DSLockDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F99561D7EC64E00306EAE /* DSLockDemoUITests.m */; };
+		333F99691D7EC6AA00306EAE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F99661D7EC6AA00306EAE /* BaseViewController.m */; };
+		333F996A1D7EC6AA00306EAE /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F99681D7EC6AA00306EAE /* RootViewController.m */; };
+		333F99701D7EC7FA00306EAE /* NSLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F996F1D7EC7FA00306EAE /* NSLockViewController.m */; };
+		333F99731D7EC9CD00306EAE /* StudentsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F99721D7EC9CD00306EAE /* StudentsObject.m */; };
+		333F99761D7EFE3D00306EAE /* SynchronizedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F99751D7EFE3D00306EAE /* SynchronizedViewController.m */; };
+		333F99791D7EFF9500306EAE /* PthreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F99781D7EFF9500306EAE /* PthreadViewController.m */; };
+		333F997C1D7F00CE00306EAE /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F997B1D7F00CE00306EAE /* GCDViewController.m */; };
+		333F997F1D7F035300306EAE /* NSRecursiveLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F997E1D7F035300306EAE /* NSRecursiveLockViewController.m */; };
+		333F99821D7F0BA200306EAE /* NSConditionLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333F99811D7F0BA200306EAE /* NSConditionLockViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		333F99481D7EC64E00306EAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 333F99261D7EC64E00306EAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 333F992D1D7EC64E00306EAE;
+			remoteInfo = DSLockDemo;
+		};
+		333F99531D7EC64E00306EAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 333F99261D7EC64E00306EAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 333F992D1D7EC64E00306EAE;
+			remoteInfo = DSLockDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		333F992E1D7EC64E00306EAE /* DSLockDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSLockDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		333F99321D7EC64E00306EAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		333F99341D7EC64E00306EAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		333F99351D7EC64E00306EAE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		333F99371D7EC64E00306EAE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		333F99381D7EC64E00306EAE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		333F993B1D7EC64E00306EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		333F993D1D7EC64E00306EAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		333F99401D7EC64E00306EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		333F99421D7EC64E00306EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		333F99471D7EC64E00306EAE /* DSLockDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSLockDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		333F994B1D7EC64E00306EAE /* DSLockDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLockDemoTests.m; sourceTree = "<group>"; };
+		333F994D1D7EC64E00306EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		333F99521D7EC64E00306EAE /* DSLockDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSLockDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		333F99561D7EC64E00306EAE /* DSLockDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSLockDemoUITests.m; sourceTree = "<group>"; };
+		333F99581D7EC64E00306EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		333F99651D7EC6AA00306EAE /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		333F99661D7EC6AA00306EAE /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		333F99671D7EC6AA00306EAE /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		333F99681D7EC6AA00306EAE /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		333F996E1D7EC7FA00306EAE /* NSLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLockViewController.h; sourceTree = "<group>"; };
+		333F996F1D7EC7FA00306EAE /* NSLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLockViewController.m; sourceTree = "<group>"; };
+		333F99711D7EC9CD00306EAE /* StudentsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsObject.h; sourceTree = "<group>"; };
+		333F99721D7EC9CD00306EAE /* StudentsObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsObject.m; sourceTree = "<group>"; };
+		333F99741D7EFE3D00306EAE /* SynchronizedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynchronizedViewController.h; sourceTree = "<group>"; };
+		333F99751D7EFE3D00306EAE /* SynchronizedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynchronizedViewController.m; sourceTree = "<group>"; };
+		333F99771D7EFF9500306EAE /* PthreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PthreadViewController.h; sourceTree = "<group>"; };
+		333F99781D7EFF9500306EAE /* PthreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PthreadViewController.m; sourceTree = "<group>"; };
+		333F997A1D7F00CE00306EAE /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		333F997B1D7F00CE00306EAE /* GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		333F997D1D7F035300306EAE /* NSRecursiveLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRecursiveLockViewController.h; sourceTree = "<group>"; };
+		333F997E1D7F035300306EAE /* NSRecursiveLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRecursiveLockViewController.m; sourceTree = "<group>"; };
+		333F99801D7F0BA200306EAE /* NSConditionLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSConditionLockViewController.h; sourceTree = "<group>"; };
+		333F99811D7F0BA200306EAE /* NSConditionLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSConditionLockViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		333F992B1D7EC64E00306EAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333F99441D7EC64E00306EAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333F994F1D7EC64E00306EAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		333F99251D7EC64E00306EAE = {
+			isa = PBXGroup;
+			children = (
+				333F99301D7EC64E00306EAE /* DSLockDemo */,
+				333F994A1D7EC64E00306EAE /* DSLockDemoTests */,
+				333F99551D7EC64E00306EAE /* DSLockDemoUITests */,
+				333F992F1D7EC64E00306EAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		333F992F1D7EC64E00306EAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				333F992E1D7EC64E00306EAE /* DSLockDemo.app */,
+				333F99471D7EC64E00306EAE /* DSLockDemoTests.xctest */,
+				333F99521D7EC64E00306EAE /* DSLockDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		333F99301D7EC64E00306EAE /* DSLockDemo */ = {
+			isa = PBXGroup;
+			children = (
+				333F99641D7EC6AA00306EAE /* Controller */,
+				333F99341D7EC64E00306EAE /* AppDelegate.h */,
+				333F99351D7EC64E00306EAE /* AppDelegate.m */,
+				333F99371D7EC64E00306EAE /* ViewController.h */,
+				333F99381D7EC64E00306EAE /* ViewController.m */,
+				333F99711D7EC9CD00306EAE /* StudentsObject.h */,
+				333F99721D7EC9CD00306EAE /* StudentsObject.m */,
+				333F993A1D7EC64E00306EAE /* Main.storyboard */,
+				333F993D1D7EC64E00306EAE /* Assets.xcassets */,
+				333F993F1D7EC64E00306EAE /* LaunchScreen.storyboard */,
+				333F99421D7EC64E00306EAE /* Info.plist */,
+				333F99311D7EC64E00306EAE /* Supporting Files */,
+			);
+			path = DSLockDemo;
+			sourceTree = "<group>";
+		};
+		333F99311D7EC64E00306EAE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				333F99321D7EC64E00306EAE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		333F994A1D7EC64E00306EAE /* DSLockDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				333F994B1D7EC64E00306EAE /* DSLockDemoTests.m */,
+				333F994D1D7EC64E00306EAE /* Info.plist */,
+			);
+			path = DSLockDemoTests;
+			sourceTree = "<group>";
+		};
+		333F99551D7EC64E00306EAE /* DSLockDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				333F99561D7EC64E00306EAE /* DSLockDemoUITests.m */,
+				333F99581D7EC64E00306EAE /* Info.plist */,
+			);
+			path = DSLockDemoUITests;
+			sourceTree = "<group>";
+		};
+		333F99641D7EC6AA00306EAE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				333F99651D7EC6AA00306EAE /* BaseViewController.h */,
+				333F99661D7EC6AA00306EAE /* BaseViewController.m */,
+				333F99671D7EC6AA00306EAE /* RootViewController.h */,
+				333F99681D7EC6AA00306EAE /* RootViewController.m */,
+				333F996E1D7EC7FA00306EAE /* NSLockViewController.h */,
+				333F996F1D7EC7FA00306EAE /* NSLockViewController.m */,
+				333F99741D7EFE3D00306EAE /* SynchronizedViewController.h */,
+				333F99751D7EFE3D00306EAE /* SynchronizedViewController.m */,
+				333F99771D7EFF9500306EAE /* PthreadViewController.h */,
+				333F99781D7EFF9500306EAE /* PthreadViewController.m */,
+				333F997A1D7F00CE00306EAE /* GCDViewController.h */,
+				333F997B1D7F00CE00306EAE /* GCDViewController.m */,
+				333F997D1D7F035300306EAE /* NSRecursiveLockViewController.h */,
+				333F997E1D7F035300306EAE /* NSRecursiveLockViewController.m */,
+				333F99801D7F0BA200306EAE /* NSConditionLockViewController.h */,
+				333F99811D7F0BA200306EAE /* NSConditionLockViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		333F992D1D7EC64E00306EAE /* DSLockDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 333F995B1D7EC64E00306EAE /* Build configuration list for PBXNativeTarget "DSLockDemo" */;
+			buildPhases = (
+				333F992A1D7EC64E00306EAE /* Sources */,
+				333F992B1D7EC64E00306EAE /* Frameworks */,
+				333F992C1D7EC64E00306EAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSLockDemo;
+			productName = DSLockDemo;
+			productReference = 333F992E1D7EC64E00306EAE /* DSLockDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		333F99461D7EC64E00306EAE /* DSLockDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 333F995E1D7EC64E00306EAE /* Build configuration list for PBXNativeTarget "DSLockDemoTests" */;
+			buildPhases = (
+				333F99431D7EC64E00306EAE /* Sources */,
+				333F99441D7EC64E00306EAE /* Frameworks */,
+				333F99451D7EC64E00306EAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				333F99491D7EC64E00306EAE /* PBXTargetDependency */,
+			);
+			name = DSLockDemoTests;
+			productName = DSLockDemoTests;
+			productReference = 333F99471D7EC64E00306EAE /* DSLockDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		333F99511D7EC64E00306EAE /* DSLockDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 333F99611D7EC64E00306EAE /* Build configuration list for PBXNativeTarget "DSLockDemoUITests" */;
+			buildPhases = (
+				333F994E1D7EC64E00306EAE /* Sources */,
+				333F994F1D7EC64E00306EAE /* Frameworks */,
+				333F99501D7EC64E00306EAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				333F99541D7EC64E00306EAE /* PBXTargetDependency */,
+			);
+			name = DSLockDemoUITests;
+			productName = DSLockDemoUITests;
+			productReference = 333F99521D7EC64E00306EAE /* DSLockDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		333F99261D7EC64E00306EAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "齐滇大圣";
+				TargetAttributes = {
+					333F992D1D7EC64E00306EAE = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					333F99461D7EC64E00306EAE = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 333F992D1D7EC64E00306EAE;
+					};
+					333F99511D7EC64E00306EAE = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 333F992D1D7EC64E00306EAE;
+					};
+				};
+			};
+			buildConfigurationList = 333F99291D7EC64E00306EAE /* Build configuration list for PBXProject "DSLockDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 333F99251D7EC64E00306EAE;
+			productRefGroup = 333F992F1D7EC64E00306EAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				333F992D1D7EC64E00306EAE /* DSLockDemo */,
+				333F99461D7EC64E00306EAE /* DSLockDemoTests */,
+				333F99511D7EC64E00306EAE /* DSLockDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		333F992C1D7EC64E00306EAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333F99411D7EC64E00306EAE /* LaunchScreen.storyboard in Resources */,
+				333F993E1D7EC64E00306EAE /* Assets.xcassets in Resources */,
+				333F993C1D7EC64E00306EAE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333F99451D7EC64E00306EAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333F99501D7EC64E00306EAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		333F992A1D7EC64E00306EAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333F99391D7EC64E00306EAE /* ViewController.m in Sources */,
+				333F99691D7EC6AA00306EAE /* BaseViewController.m in Sources */,
+				333F99361D7EC64E00306EAE /* AppDelegate.m in Sources */,
+				333F997C1D7F00CE00306EAE /* GCDViewController.m in Sources */,
+				333F997F1D7F035300306EAE /* NSRecursiveLockViewController.m in Sources */,
+				333F99701D7EC7FA00306EAE /* NSLockViewController.m in Sources */,
+				333F99821D7F0BA200306EAE /* NSConditionLockViewController.m in Sources */,
+				333F99731D7EC9CD00306EAE /* StudentsObject.m in Sources */,
+				333F99331D7EC64E00306EAE /* main.m in Sources */,
+				333F99761D7EFE3D00306EAE /* SynchronizedViewController.m in Sources */,
+				333F996A1D7EC6AA00306EAE /* RootViewController.m in Sources */,
+				333F99791D7EFF9500306EAE /* PthreadViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333F99431D7EC64E00306EAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333F994C1D7EC64E00306EAE /* DSLockDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333F994E1D7EC64E00306EAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				333F99571D7EC64E00306EAE /* DSLockDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		333F99491D7EC64E00306EAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 333F992D1D7EC64E00306EAE /* DSLockDemo */;
+			targetProxy = 333F99481D7EC64E00306EAE /* PBXContainerItemProxy */;
+		};
+		333F99541D7EC64E00306EAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 333F992D1D7EC64E00306EAE /* DSLockDemo */;
+			targetProxy = 333F99531D7EC64E00306EAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		333F993A1D7EC64E00306EAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				333F993B1D7EC64E00306EAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		333F993F1D7EC64E00306EAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				333F99401D7EC64E00306EAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		333F99591D7EC64E00306EAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		333F995A1D7EC64E00306EAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		333F995C1D7EC64E00306EAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DSLockDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.123.com.DSLockDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		333F995D1D7EC64E00306EAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DSLockDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.123.com.DSLockDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		333F995F1D7EC64E00306EAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DSLockDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.123.com.DSLockDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSLockDemo.app/DSLockDemo";
+			};
+			name = Debug;
+		};
+		333F99601D7EC64E00306EAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DSLockDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.123.com.DSLockDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSLockDemo.app/DSLockDemo";
+			};
+			name = Release;
+		};
+		333F99621D7EC64E00306EAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DSLockDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.123.com.DSLockDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DSLockDemo;
+			};
+			name = Debug;
+		};
+		333F99631D7EC64E00306EAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DSLockDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.123.com.DSLockDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DSLockDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		333F99291D7EC64E00306EAE /* Build configuration list for PBXProject "DSLockDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				333F99591D7EC64E00306EAE /* Debug */,
+				333F995A1D7EC64E00306EAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		333F995B1D7EC64E00306EAE /* Build configuration list for PBXNativeTarget "DSLockDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				333F995C1D7EC64E00306EAE /* Debug */,
+				333F995D1D7EC64E00306EAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		333F995E1D7EC64E00306EAE /* Build configuration list for PBXNativeTarget "DSLockDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				333F995F1D7EC64E00306EAE /* Debug */,
+				333F99601D7EC64E00306EAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		333F99611D7EC64E00306EAE /* Build configuration list for PBXNativeTarget "DSLockDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				333F99621D7EC64E00306EAE /* Debug */,
+				333F99631D7EC64E00306EAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 333F99261D7EC64E00306EAE /* Project object */;
+}
